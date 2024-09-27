@@ -1,0 +1,721 @@
+# Project: USPDesigner
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = OBJ/anaaproj.o OBJ/anaarea_.o OBJ/anacaren.o OBJ/anacatot.o OBJ/anacentg.o OBJ/anacgtot.o OBJ/anadensa.o OBJ/anadensi.o OBJ/anadflui.o OBJ/anaemtot.o OBJ/anaintot.o OBJ/anamassa.o OBJ/anaminrc.o OBJ/anamtot_.o OBJ/anapesot.o OBJ/anashow_.o OBJ/anavftot.o OBJ/anavolum.o OBJ/anavtot_.o OBJ/anicreat.o OBJ/aniexibe.o OBJ/animlist.o OBJ/BVThreadFun.o OBJ/cBasicViewer.o OBJ/camaltcr.o OBJ/camaltpr.o OBJ/camcheck.o OBJ/camcopy_.o OBJ/camgetpr.o OBJ/camlist_.o OBJ/cammanip.o OBJ/camnew__.o OBJ/camremov.o OBJ/camrenam.o OBJ/camsetcr.o OBJ/camtrncr.o OBJ/curaddpt.o OBJ/curaux__.o OBJ/curdelem.o OBJ/cureline.o OBJ/curepoly.o OBJ/curfinde.o OBJ/curkline.o OBJ/curkpoly.o OBJ/curmline.o OBJ/curmnewe.o OBJ/curmpoly.o OBJ/curpleng.o OBJ/currempt.o OBJ/cursettg.o OBJ/curtest1.o OBJ/disbreak.o OBJ/discamer.o OBJ/discaxis.o OBJ/disccolr.o OBJ/discdisp.o OBJ/discfile.o OBJ/disclip3.o OBJ/disedge_.o OBJ/dishediv.o OBJ/dishevis.o OBJ/dishidde.o OBJ/dishinfc.o OBJ/dishintr.o OBJ/dishsore.o OBJ/dishvisb.o OBJ/disledge.o OBJ/disltrns.o OBJ/dismonit.o OBJ/eulcolor.o OBJ/euldoinv.o OBJ/eulerops.o OBJ/eulkef__.o OBJ/eulkemr_.o OBJ/eulkev__.o OBJ/eulkfmrh.o OBJ/eulksfmr.o OBJ/eulkvsf_.o OBJ/eulmef__.o OBJ/eulmekr_.o OBJ/eulmev__.o OBJ/eulmfkrh.o OBJ/eulmodif.o OBJ/eulmsfkr.o OBJ/eulmvsf_.o OBJ/eulnome_.o OBJ/eulprint.o OBJ/eulread_.o OBJ/eulscoef.o OBJ/eulxundo.o OBJ/genaxsas.o OBJ/genaxsds.o OBJ/gencopy_.o OBJ/gendelet.o OBJ/gendir__.o OBJ/genfadjr.o OBJ/genfindn.o OBJ/gengrpas.o OBJ/gengrpds.o OBJ/genlist_.o OBJ/genload_.o OBJ/genncopy.o OBJ/genrenam.o OBJ/genrotat.o OBJ/gensave_.o OBJ/genshow_.o OBJ/gentrans.o OBJ/genwait_.o OBJ/gphclear.o OBJ/gphlintf.o OBJ/gphprint.o OBJ/gphwindw.o OBJ/hieassag.o OBJ/hieassas.o OBJ/hieassgg.o OBJ/hieassgs.o OBJ/hieaxscd.o OBJ/hieaxscr.o OBJ/hieaxsdf.o OBJ/hieaxsli.o OBJ/hieaxsmn.o OBJ/hieaxsmv.o OBJ/hieaxsrm.o OBJ/hieaxsrn.o OBJ/hieaxsrt.o OBJ/hieaxstr.o OBJ/hiedesag.o OBJ/hiedesas.o OBJ/hiedesgg.o OBJ/hiedesgs.o OBJ/hiegrpcr.o OBJ/hiegrpcs.o OBJ/hiegrpcy.o OBJ/hiegrpdf.o OBJ/hiegrpli.o OBJ/hiegrpmn.o OBJ/hiegrpmv.o OBJ/hiegrprg.o OBJ/hiegrprm.o OBJ/hiegrprn.o OBJ/hiegrprt.o OBJ/hiegrpsc.o OBJ/hiegrptf.o OBJ/lowaddel.o OBJ/lowaddhe.o OBJ/lowboxop.o OBJ/lowcheck.o OBJ/lowfaceq.o OBJ/lowfinde.o OBJ/lowgeome.o OBJ/lowinfos.o OBJ/lowlists.o OBJ/lownewel.o OBJ/lowtrafn.o OBJ/lowtrans.o OBJ/lowtrrot.o OBJ/lowtrrtg.o OBJ/lowtrsca.o OBJ/lowtrtra.o OBJ/manhelp_.o OBJ/manlinin.o OBJ/manmainp.o OBJ/manstrmp.o OBJ/mantrace.o OBJ/memsolid.o OBJ/memvirtu.o OBJ/rndaux__.o OBJ/rndfase1.o OBJ/rndfase2.o OBJ/rndfase3.o OBJ/rndround.o OBJ/rovcirc_.o OBJ/rovcone_.o OBJ/rovcubo_.o OBJ/rovdist_.o OBJ/rovdmprc.o OBJ/rovesfer.o OBJ/rovorden.o OBJ/rovperi_.o OBJ/rovperl_.o OBJ/rovpert_.o OBJ/rovplaca.o OBJ/rovprism.o OBJ/rovpyram.o OBJ/rovquad_.o OBJ/rovretan.o OBJ/rovtrian.o OBJ/rovtrnds.o OBJ/rovtrntr.o OBJ/setdiffe.o OBJ/setinter.o OBJ/setomain.o OBJ/setopcls.o OBJ/setopcon.o OBJ/setopfin.o OBJ/setopgen.o OBJ/setopget.o OBJ/setsinsn.o OBJ/setsrece.o OBJ/setsrecs.o OBJ/settrace.o OBJ/setunion.o OBJ/shpcylin.o OBJ/shpgeoms.o OBJ/shpmpris.o OBJ/shpmrevo.o OBJ/shppris0.o OBJ/shpprism.o OBJ/shppyram.o OBJ/shprevol.o OBJ/shpspher.o OBJ/shpsweep.o OBJ/shptorus.o OBJ/shpxcube.o OBJ/splmain_.o OBJ/splstep1.o OBJ/splstep2.o OBJ/splstep3.o OBJ/splstep4.o OBJ/splvoron.o OBJ/topclean.o OBJ/topdetac.o OBJ/toplglue.o OBJ/topmerge.o OBJ/topmodif.o OBJ/topnewlc.o OBJ/topremhr.o OBJ/topremsf.o OBJ/toprever.o OBJ/topringm.o OBJ/vectorop.o OBJ/PROP.o
+LINKOBJ  = OBJ/anaaproj.o OBJ/anaarea_.o OBJ/anacaren.o OBJ/anacatot.o OBJ/anacentg.o OBJ/anacgtot.o OBJ/anadensa.o OBJ/anadensi.o OBJ/anadflui.o OBJ/anaemtot.o OBJ/anaintot.o OBJ/anamassa.o OBJ/anaminrc.o OBJ/anamtot_.o OBJ/anapesot.o OBJ/anashow_.o OBJ/anavftot.o OBJ/anavolum.o OBJ/anavtot_.o OBJ/anicreat.o OBJ/aniexibe.o OBJ/animlist.o OBJ/BVThreadFun.o OBJ/cBasicViewer.o OBJ/camaltcr.o OBJ/camaltpr.o OBJ/camcheck.o OBJ/camcopy_.o OBJ/camgetpr.o OBJ/camlist_.o OBJ/cammanip.o OBJ/camnew__.o OBJ/camremov.o OBJ/camrenam.o OBJ/camsetcr.o OBJ/camtrncr.o OBJ/curaddpt.o OBJ/curaux__.o OBJ/curdelem.o OBJ/cureline.o OBJ/curepoly.o OBJ/curfinde.o OBJ/curkline.o OBJ/curkpoly.o OBJ/curmline.o OBJ/curmnewe.o OBJ/curmpoly.o OBJ/curpleng.o OBJ/currempt.o OBJ/cursettg.o OBJ/curtest1.o OBJ/disbreak.o OBJ/discamer.o OBJ/discaxis.o OBJ/disccolr.o OBJ/discdisp.o OBJ/discfile.o OBJ/disclip3.o OBJ/disedge_.o OBJ/dishediv.o OBJ/dishevis.o OBJ/dishidde.o OBJ/dishinfc.o OBJ/dishintr.o OBJ/dishsore.o OBJ/dishvisb.o OBJ/disledge.o OBJ/disltrns.o OBJ/dismonit.o OBJ/eulcolor.o OBJ/euldoinv.o OBJ/eulerops.o OBJ/eulkef__.o OBJ/eulkemr_.o OBJ/eulkev__.o OBJ/eulkfmrh.o OBJ/eulksfmr.o OBJ/eulkvsf_.o OBJ/eulmef__.o OBJ/eulmekr_.o OBJ/eulmev__.o OBJ/eulmfkrh.o OBJ/eulmodif.o OBJ/eulmsfkr.o OBJ/eulmvsf_.o OBJ/eulnome_.o OBJ/eulprint.o OBJ/eulread_.o OBJ/eulscoef.o OBJ/eulxundo.o OBJ/genaxsas.o OBJ/genaxsds.o OBJ/gencopy_.o OBJ/gendelet.o OBJ/gendir__.o OBJ/genfadjr.o OBJ/genfindn.o OBJ/gengrpas.o OBJ/gengrpds.o OBJ/genlist_.o OBJ/genload_.o OBJ/genncopy.o OBJ/genrenam.o OBJ/genrotat.o OBJ/gensave_.o OBJ/genshow_.o OBJ/gentrans.o OBJ/genwait_.o OBJ/gphclear.o OBJ/gphlintf.o OBJ/gphprint.o OBJ/gphwindw.o OBJ/hieassag.o OBJ/hieassas.o OBJ/hieassgg.o OBJ/hieassgs.o OBJ/hieaxscd.o OBJ/hieaxscr.o OBJ/hieaxsdf.o OBJ/hieaxsli.o OBJ/hieaxsmn.o OBJ/hieaxsmv.o OBJ/hieaxsrm.o OBJ/hieaxsrn.o OBJ/hieaxsrt.o OBJ/hieaxstr.o OBJ/hiedesag.o OBJ/hiedesas.o OBJ/hiedesgg.o OBJ/hiedesgs.o OBJ/hiegrpcr.o OBJ/hiegrpcs.o OBJ/hiegrpcy.o OBJ/hiegrpdf.o OBJ/hiegrpli.o OBJ/hiegrpmn.o OBJ/hiegrpmv.o OBJ/hiegrprg.o OBJ/hiegrprm.o OBJ/hiegrprn.o OBJ/hiegrprt.o OBJ/hiegrpsc.o OBJ/hiegrptf.o OBJ/lowaddel.o OBJ/lowaddhe.o OBJ/lowboxop.o OBJ/lowcheck.o OBJ/lowfaceq.o OBJ/lowfinde.o OBJ/lowgeome.o OBJ/lowinfos.o OBJ/lowlists.o OBJ/lownewel.o OBJ/lowtrafn.o OBJ/lowtrans.o OBJ/lowtrrot.o OBJ/lowtrrtg.o OBJ/lowtrsca.o OBJ/lowtrtra.o OBJ/manhelp_.o OBJ/manlinin.o OBJ/manmainp.o OBJ/manstrmp.o OBJ/mantrace.o OBJ/memsolid.o OBJ/memvirtu.o OBJ/rndaux__.o OBJ/rndfase1.o OBJ/rndfase2.o OBJ/rndfase3.o OBJ/rndround.o OBJ/rovcirc_.o OBJ/rovcone_.o OBJ/rovcubo_.o OBJ/rovdist_.o OBJ/rovdmprc.o OBJ/rovesfer.o OBJ/rovorden.o OBJ/rovperi_.o OBJ/rovperl_.o OBJ/rovpert_.o OBJ/rovplaca.o OBJ/rovprism.o OBJ/rovpyram.o OBJ/rovquad_.o OBJ/rovretan.o OBJ/rovtrian.o OBJ/rovtrnds.o OBJ/rovtrntr.o OBJ/setdiffe.o OBJ/setinter.o OBJ/setomain.o OBJ/setopcls.o OBJ/setopcon.o OBJ/setopfin.o OBJ/setopgen.o OBJ/setopget.o OBJ/setsinsn.o OBJ/setsrece.o OBJ/setsrecs.o OBJ/settrace.o OBJ/setunion.o OBJ/shpcylin.o OBJ/shpgeoms.o OBJ/shpmpris.o OBJ/shpmrevo.o OBJ/shppris0.o OBJ/shpprism.o OBJ/shppyram.o OBJ/shprevol.o OBJ/shpspher.o OBJ/shpsweep.o OBJ/shptorus.o OBJ/shpxcube.o OBJ/splmain_.o OBJ/splstep1.o OBJ/splstep2.o OBJ/splstep3.o OBJ/splstep4.o OBJ/splvoron.o OBJ/topclean.o OBJ/topdetac.o OBJ/toplglue.o OBJ/topmerge.o OBJ/topmodif.o OBJ/topnewlc.o OBJ/topremhr.o OBJ/topremsf.o OBJ/toprever.o OBJ/topringm.o OBJ/vectorop.o OBJ/PROP.o
+LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc -mwindows -mconsole -lgdi32
+INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = USPDesigner.exe
+CXXFLAGS = $(CXXINCS) -D_Windows -D__ROV__ -D__curved_env__ -I./INC
+CFLAGS   = $(INCS) -D_Windows -D__ROV__ -D__curved_env__ -I./INC
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+OBJ/anaaproj.o: ANA/anaaproj.cpp
+	$(CPP) -c ANA/anaaproj.cpp -o OBJ/anaaproj.o $(CXXFLAGS)
+
+OBJ/anaarea_.o: ANA/anaarea_.cpp
+	$(CPP) -c ANA/anaarea_.cpp -o OBJ/anaarea_.o $(CXXFLAGS)
+
+OBJ/anacaren.o: ANA/anacaren.cpp
+	$(CPP) -c ANA/anacaren.cpp -o OBJ/anacaren.o $(CXXFLAGS)
+
+OBJ/anacatot.o: ANA/anacatot.cpp
+	$(CPP) -c ANA/anacatot.cpp -o OBJ/anacatot.o $(CXXFLAGS)
+
+OBJ/anacentg.o: ANA/anacentg.cpp
+	$(CPP) -c ANA/anacentg.cpp -o OBJ/anacentg.o $(CXXFLAGS)
+
+OBJ/anacgtot.o: ANA/anacgtot.cpp
+	$(CPP) -c ANA/anacgtot.cpp -o OBJ/anacgtot.o $(CXXFLAGS)
+
+OBJ/anadensa.o: ANA/anadensa.cpp
+	$(CPP) -c ANA/anadensa.cpp -o OBJ/anadensa.o $(CXXFLAGS)
+
+OBJ/anadensi.o: ANA/anadensi.cpp
+	$(CPP) -c ANA/anadensi.cpp -o OBJ/anadensi.o $(CXXFLAGS)
+
+OBJ/anadflui.o: ANA/anadflui.cpp
+	$(CPP) -c ANA/anadflui.cpp -o OBJ/anadflui.o $(CXXFLAGS)
+
+OBJ/anaemtot.o: ANA/anaemtot.cpp
+	$(CPP) -c ANA/anaemtot.cpp -o OBJ/anaemtot.o $(CXXFLAGS)
+
+OBJ/anaintot.o: ANA/anaintot.cpp
+	$(CPP) -c ANA/anaintot.cpp -o OBJ/anaintot.o $(CXXFLAGS)
+
+OBJ/anamassa.o: ANA/anamassa.cpp
+	$(CPP) -c ANA/anamassa.cpp -o OBJ/anamassa.o $(CXXFLAGS)
+
+OBJ/anaminrc.o: ANA/anaminrc.cpp
+	$(CPP) -c ANA/anaminrc.cpp -o OBJ/anaminrc.o $(CXXFLAGS)
+
+OBJ/anamtot_.o: ANA/anamtot_.cpp
+	$(CPP) -c ANA/anamtot_.cpp -o OBJ/anamtot_.o $(CXXFLAGS)
+
+OBJ/anapesot.o: ANA/anapesot.cpp
+	$(CPP) -c ANA/anapesot.cpp -o OBJ/anapesot.o $(CXXFLAGS)
+
+OBJ/anashow_.o: ANA/anashow_.cpp
+	$(CPP) -c ANA/anashow_.cpp -o OBJ/anashow_.o $(CXXFLAGS)
+
+OBJ/anavftot.o: ANA/anavftot.cpp
+	$(CPP) -c ANA/anavftot.cpp -o OBJ/anavftot.o $(CXXFLAGS)
+
+OBJ/anavolum.o: ANA/anavolum.cpp
+	$(CPP) -c ANA/anavolum.cpp -o OBJ/anavolum.o $(CXXFLAGS)
+
+OBJ/anavtot_.o: ANA/anavtot_.cpp
+	$(CPP) -c ANA/anavtot_.cpp -o OBJ/anavtot_.o $(CXXFLAGS)
+
+OBJ/anicreat.o: ANI/anicreat.cpp
+	$(CPP) -c ANI/anicreat.cpp -o OBJ/anicreat.o $(CXXFLAGS)
+
+OBJ/aniexibe.o: ANI/aniexibe.cpp
+	$(CPP) -c ANI/aniexibe.cpp -o OBJ/aniexibe.o $(CXXFLAGS)
+
+OBJ/animlist.o: ANI/animlist.cpp
+	$(CPP) -c ANI/animlist.cpp -o OBJ/animlist.o $(CXXFLAGS)
+
+OBJ/BVThreadFun.o: BasicViewer/BVThreadFun.cpp
+	$(CPP) -c BasicViewer/BVThreadFun.cpp -o OBJ/BVThreadFun.o $(CXXFLAGS)
+
+OBJ/cBasicViewer.o: BasicViewer/cBasicViewer.cpp
+	$(CPP) -c BasicViewer/cBasicViewer.cpp -o OBJ/cBasicViewer.o $(CXXFLAGS)
+
+OBJ/camaltcr.o: CAM/camaltcr.cpp
+	$(CPP) -c CAM/camaltcr.cpp -o OBJ/camaltcr.o $(CXXFLAGS)
+
+OBJ/camaltpr.o: CAM/camaltpr.cpp
+	$(CPP) -c CAM/camaltpr.cpp -o OBJ/camaltpr.o $(CXXFLAGS)
+
+OBJ/camcheck.o: CAM/camcheck.cpp
+	$(CPP) -c CAM/camcheck.cpp -o OBJ/camcheck.o $(CXXFLAGS)
+
+OBJ/camcopy_.o: CAM/camcopy_.cpp
+	$(CPP) -c CAM/camcopy_.cpp -o OBJ/camcopy_.o $(CXXFLAGS)
+
+OBJ/camgetpr.o: CAM/camgetpr.cpp
+	$(CPP) -c CAM/camgetpr.cpp -o OBJ/camgetpr.o $(CXXFLAGS)
+
+OBJ/camlist_.o: CAM/camlist_.cpp
+	$(CPP) -c CAM/camlist_.cpp -o OBJ/camlist_.o $(CXXFLAGS)
+
+OBJ/cammanip.o: CAM/cammanip.cpp
+	$(CPP) -c CAM/cammanip.cpp -o OBJ/cammanip.o $(CXXFLAGS)
+
+OBJ/camnew__.o: CAM/camnew__.cpp
+	$(CPP) -c CAM/camnew__.cpp -o OBJ/camnew__.o $(CXXFLAGS)
+
+OBJ/camremov.o: CAM/camremov.cpp
+	$(CPP) -c CAM/camremov.cpp -o OBJ/camremov.o $(CXXFLAGS)
+
+OBJ/camrenam.o: CAM/camrenam.cpp
+	$(CPP) -c CAM/camrenam.cpp -o OBJ/camrenam.o $(CXXFLAGS)
+
+OBJ/camsetcr.o: CAM/camsetcr.cpp
+	$(CPP) -c CAM/camsetcr.cpp -o OBJ/camsetcr.o $(CXXFLAGS)
+
+OBJ/camtrncr.o: CAM/camtrncr.cpp
+	$(CPP) -c CAM/camtrncr.cpp -o OBJ/camtrncr.o $(CXXFLAGS)
+
+OBJ/curaddpt.o: CUR/curaddpt.cpp
+	$(CPP) -c CUR/curaddpt.cpp -o OBJ/curaddpt.o $(CXXFLAGS)
+
+OBJ/curaux__.o: CUR/curaux__.cpp
+	$(CPP) -c CUR/curaux__.cpp -o OBJ/curaux__.o $(CXXFLAGS)
+
+OBJ/curdelem.o: CUR/curdelem.cpp
+	$(CPP) -c CUR/curdelem.cpp -o OBJ/curdelem.o $(CXXFLAGS)
+
+OBJ/cureline.o: CUR/cureline.cpp
+	$(CPP) -c CUR/cureline.cpp -o OBJ/cureline.o $(CXXFLAGS)
+
+OBJ/curepoly.o: CUR/curepoly.cpp
+	$(CPP) -c CUR/curepoly.cpp -o OBJ/curepoly.o $(CXXFLAGS)
+
+OBJ/curfinde.o: CUR/curfinde.cpp
+	$(CPP) -c CUR/curfinde.cpp -o OBJ/curfinde.o $(CXXFLAGS)
+
+OBJ/curkline.o: CUR/curkline.cpp
+	$(CPP) -c CUR/curkline.cpp -o OBJ/curkline.o $(CXXFLAGS)
+
+OBJ/curkpoly.o: CUR/curkpoly.cpp
+	$(CPP) -c CUR/curkpoly.cpp -o OBJ/curkpoly.o $(CXXFLAGS)
+
+OBJ/curmline.o: CUR/curmline.cpp
+	$(CPP) -c CUR/curmline.cpp -o OBJ/curmline.o $(CXXFLAGS)
+
+OBJ/curmnewe.o: CUR/curmnewe.cpp
+	$(CPP) -c CUR/curmnewe.cpp -o OBJ/curmnewe.o $(CXXFLAGS)
+
+OBJ/curmpoly.o: CUR/curmpoly.cpp
+	$(CPP) -c CUR/curmpoly.cpp -o OBJ/curmpoly.o $(CXXFLAGS)
+
+OBJ/curpleng.o: CUR/curpleng.cpp
+	$(CPP) -c CUR/curpleng.cpp -o OBJ/curpleng.o $(CXXFLAGS)
+
+OBJ/currempt.o: CUR/currempt.cpp
+	$(CPP) -c CUR/currempt.cpp -o OBJ/currempt.o $(CXXFLAGS)
+
+OBJ/cursettg.o: CUR/cursettg.cpp
+	$(CPP) -c CUR/cursettg.cpp -o OBJ/cursettg.o $(CXXFLAGS)
+
+OBJ/curtest1.o: CUR/curtest1.cpp
+	$(CPP) -c CUR/curtest1.cpp -o OBJ/curtest1.o $(CXXFLAGS)
+
+OBJ/disbreak.o: DIS/disbreak.cpp
+	$(CPP) -c DIS/disbreak.cpp -o OBJ/disbreak.o $(CXXFLAGS)
+
+OBJ/discamer.o: DIS/discamer.cpp
+	$(CPP) -c DIS/discamer.cpp -o OBJ/discamer.o $(CXXFLAGS)
+
+OBJ/discaxis.o: DIS/discaxis.cpp
+	$(CPP) -c DIS/discaxis.cpp -o OBJ/discaxis.o $(CXXFLAGS)
+
+OBJ/disccolr.o: DIS/disccolr.cpp
+	$(CPP) -c DIS/disccolr.cpp -o OBJ/disccolr.o $(CXXFLAGS)
+
+OBJ/discdisp.o: DIS/discdisp.cpp
+	$(CPP) -c DIS/discdisp.cpp -o OBJ/discdisp.o $(CXXFLAGS)
+
+OBJ/discfile.o: DIS/discfile.cpp
+	$(CPP) -c DIS/discfile.cpp -o OBJ/discfile.o $(CXXFLAGS)
+
+OBJ/disclip3.o: DIS/disclip3.cpp
+	$(CPP) -c DIS/disclip3.cpp -o OBJ/disclip3.o $(CXXFLAGS)
+
+OBJ/disedge_.o: DIS/disedge_.cpp
+	$(CPP) -c DIS/disedge_.cpp -o OBJ/disedge_.o $(CXXFLAGS)
+
+OBJ/dishediv.o: DIS/dishediv.cpp
+	$(CPP) -c DIS/dishediv.cpp -o OBJ/dishediv.o $(CXXFLAGS)
+
+OBJ/dishevis.o: DIS/dishevis.cpp
+	$(CPP) -c DIS/dishevis.cpp -o OBJ/dishevis.o $(CXXFLAGS)
+
+OBJ/dishidde.o: DIS/dishidde.cpp
+	$(CPP) -c DIS/dishidde.cpp -o OBJ/dishidde.o $(CXXFLAGS)
+
+OBJ/dishinfc.o: DIS/dishinfc.cpp
+	$(CPP) -c DIS/dishinfc.cpp -o OBJ/dishinfc.o $(CXXFLAGS)
+
+OBJ/dishintr.o: DIS/dishintr.cpp
+	$(CPP) -c DIS/dishintr.cpp -o OBJ/dishintr.o $(CXXFLAGS)
+
+OBJ/dishsore.o: DIS/dishsore.cpp
+	$(CPP) -c DIS/dishsore.cpp -o OBJ/dishsore.o $(CXXFLAGS)
+
+OBJ/dishvisb.o: DIS/dishvisb.cpp
+	$(CPP) -c DIS/dishvisb.cpp -o OBJ/dishvisb.o $(CXXFLAGS)
+
+OBJ/disledge.o: DIS/disledge.cpp
+	$(CPP) -c DIS/disledge.cpp -o OBJ/disledge.o $(CXXFLAGS)
+
+OBJ/disltrns.o: DIS/disltrns.cpp
+	$(CPP) -c DIS/disltrns.cpp -o OBJ/disltrns.o $(CXXFLAGS)
+
+OBJ/dismonit.o: DIS/dismonit.cpp
+	$(CPP) -c DIS/dismonit.cpp -o OBJ/dismonit.o $(CXXFLAGS)
+
+OBJ/eulcolor.o: EUL/eulcolor.cpp
+	$(CPP) -c EUL/eulcolor.cpp -o OBJ/eulcolor.o $(CXXFLAGS)
+
+OBJ/euldoinv.o: EUL/euldoinv.cpp
+	$(CPP) -c EUL/euldoinv.cpp -o OBJ/euldoinv.o $(CXXFLAGS)
+
+OBJ/eulerops.o: EUL/eulerops.cpp
+	$(CPP) -c EUL/eulerops.cpp -o OBJ/eulerops.o $(CXXFLAGS)
+
+OBJ/eulkef__.o: EUL/eulkef__.cpp
+	$(CPP) -c EUL/eulkef__.cpp -o OBJ/eulkef__.o $(CXXFLAGS)
+
+OBJ/eulkemr_.o: EUL/eulkemr_.cpp
+	$(CPP) -c EUL/eulkemr_.cpp -o OBJ/eulkemr_.o $(CXXFLAGS)
+
+OBJ/eulkev__.o: EUL/eulkev__.cpp
+	$(CPP) -c EUL/eulkev__.cpp -o OBJ/eulkev__.o $(CXXFLAGS)
+
+OBJ/eulkfmrh.o: EUL/eulkfmrh.cpp
+	$(CPP) -c EUL/eulkfmrh.cpp -o OBJ/eulkfmrh.o $(CXXFLAGS)
+
+OBJ/eulksfmr.o: EUL/eulksfmr.cpp
+	$(CPP) -c EUL/eulksfmr.cpp -o OBJ/eulksfmr.o $(CXXFLAGS)
+
+OBJ/eulkvsf_.o: EUL/eulkvsf_.cpp
+	$(CPP) -c EUL/eulkvsf_.cpp -o OBJ/eulkvsf_.o $(CXXFLAGS)
+
+OBJ/eulmef__.o: EUL/eulmef__.cpp
+	$(CPP) -c EUL/eulmef__.cpp -o OBJ/eulmef__.o $(CXXFLAGS)
+
+OBJ/eulmekr_.o: EUL/eulmekr_.cpp
+	$(CPP) -c EUL/eulmekr_.cpp -o OBJ/eulmekr_.o $(CXXFLAGS)
+
+OBJ/eulmev__.o: EUL/eulmev__.cpp
+	$(CPP) -c EUL/eulmev__.cpp -o OBJ/eulmev__.o $(CXXFLAGS)
+
+OBJ/eulmfkrh.o: EUL/eulmfkrh.cpp
+	$(CPP) -c EUL/eulmfkrh.cpp -o OBJ/eulmfkrh.o $(CXXFLAGS)
+
+OBJ/eulmodif.o: EUL/eulmodif.cpp
+	$(CPP) -c EUL/eulmodif.cpp -o OBJ/eulmodif.o $(CXXFLAGS)
+
+OBJ/eulmsfkr.o: EUL/eulmsfkr.cpp
+	$(CPP) -c EUL/eulmsfkr.cpp -o OBJ/eulmsfkr.o $(CXXFLAGS)
+
+OBJ/eulmvsf_.o: EUL/eulmvsf_.cpp
+	$(CPP) -c EUL/eulmvsf_.cpp -o OBJ/eulmvsf_.o $(CXXFLAGS)
+
+OBJ/eulnome_.o: EUL/eulnome_.cpp
+	$(CPP) -c EUL/eulnome_.cpp -o OBJ/eulnome_.o $(CXXFLAGS)
+
+OBJ/eulprint.o: EUL/eulprint.cpp
+	$(CPP) -c EUL/eulprint.cpp -o OBJ/eulprint.o $(CXXFLAGS)
+
+OBJ/eulread_.o: EUL/eulread_.cpp
+	$(CPP) -c EUL/eulread_.cpp -o OBJ/eulread_.o $(CXXFLAGS)
+
+OBJ/eulscoef.o: EUL/eulscoef.cpp
+	$(CPP) -c EUL/eulscoef.cpp -o OBJ/eulscoef.o $(CXXFLAGS)
+
+OBJ/eulxundo.o: EUL/eulxundo.cpp
+	$(CPP) -c EUL/eulxundo.cpp -o OBJ/eulxundo.o $(CXXFLAGS)
+
+OBJ/genaxsas.o: GEN/genaxsas.cpp
+	$(CPP) -c GEN/genaxsas.cpp -o OBJ/genaxsas.o $(CXXFLAGS)
+
+OBJ/genaxsds.o: GEN/genaxsds.cpp
+	$(CPP) -c GEN/genaxsds.cpp -o OBJ/genaxsds.o $(CXXFLAGS)
+
+OBJ/gencopy_.o: GEN/gencopy_.cpp
+	$(CPP) -c GEN/gencopy_.cpp -o OBJ/gencopy_.o $(CXXFLAGS)
+
+OBJ/gendelet.o: GEN/gendelet.cpp
+	$(CPP) -c GEN/gendelet.cpp -o OBJ/gendelet.o $(CXXFLAGS)
+
+OBJ/gendir__.o: GEN/gendir__.cpp
+	$(CPP) -c GEN/gendir__.cpp -o OBJ/gendir__.o $(CXXFLAGS)
+
+OBJ/genfadjr.o: GEN/genfadjr.cpp
+	$(CPP) -c GEN/genfadjr.cpp -o OBJ/genfadjr.o $(CXXFLAGS)
+
+OBJ/genfindn.o: GEN/genfindn.cpp
+	$(CPP) -c GEN/genfindn.cpp -o OBJ/genfindn.o $(CXXFLAGS)
+
+OBJ/gengrpas.o: GEN/gengrpas.cpp
+	$(CPP) -c GEN/gengrpas.cpp -o OBJ/gengrpas.o $(CXXFLAGS)
+
+OBJ/gengrpds.o: GEN/gengrpds.cpp
+	$(CPP) -c GEN/gengrpds.cpp -o OBJ/gengrpds.o $(CXXFLAGS)
+
+OBJ/genlist_.o: GEN/genlist_.cpp
+	$(CPP) -c GEN/genlist_.cpp -o OBJ/genlist_.o $(CXXFLAGS)
+
+OBJ/genload_.o: GEN/genload_.cpp
+	$(CPP) -c GEN/genload_.cpp -o OBJ/genload_.o $(CXXFLAGS)
+
+OBJ/genncopy.o: GEN/genncopy.cpp
+	$(CPP) -c GEN/genncopy.cpp -o OBJ/genncopy.o $(CXXFLAGS)
+
+OBJ/genrenam.o: GEN/genrenam.cpp
+	$(CPP) -c GEN/genrenam.cpp -o OBJ/genrenam.o $(CXXFLAGS)
+
+OBJ/genrotat.o: GEN/genrotat.cpp
+	$(CPP) -c GEN/genrotat.cpp -o OBJ/genrotat.o $(CXXFLAGS)
+
+OBJ/gensave_.o: GEN/gensave_.cpp
+	$(CPP) -c GEN/gensave_.cpp -o OBJ/gensave_.o $(CXXFLAGS)
+
+OBJ/genshow_.o: GEN/genshow_.cpp
+	$(CPP) -c GEN/genshow_.cpp -o OBJ/genshow_.o $(CXXFLAGS)
+
+OBJ/gentrans.o: GEN/gentrans.cpp
+	$(CPP) -c GEN/gentrans.cpp -o OBJ/gentrans.o $(CXXFLAGS)
+
+OBJ/genwait_.o: GEN/genwait_.cpp
+	$(CPP) -c GEN/genwait_.cpp -o OBJ/genwait_.o $(CXXFLAGS)
+
+OBJ/gphclear.o: GPH/gphclear.cpp
+	$(CPP) -c GPH/gphclear.cpp -o OBJ/gphclear.o $(CXXFLAGS)
+
+OBJ/gphlintf.o: GPH/gphlintf.cpp
+	$(CPP) -c GPH/gphlintf.cpp -o OBJ/gphlintf.o $(CXXFLAGS)
+
+OBJ/gphprint.o: GPH/gphprint.cpp
+	$(CPP) -c GPH/gphprint.cpp -o OBJ/gphprint.o $(CXXFLAGS)
+
+OBJ/gphwindw.o: GPH/gphwindw.cpp
+	$(CPP) -c GPH/gphwindw.cpp -o OBJ/gphwindw.o $(CXXFLAGS)
+
+OBJ/hieassag.o: HIE/hieassag.cpp
+	$(CPP) -c HIE/hieassag.cpp -o OBJ/hieassag.o $(CXXFLAGS)
+
+OBJ/hieassas.o: HIE/hieassas.cpp
+	$(CPP) -c HIE/hieassas.cpp -o OBJ/hieassas.o $(CXXFLAGS)
+
+OBJ/hieassgg.o: HIE/hieassgg.cpp
+	$(CPP) -c HIE/hieassgg.cpp -o OBJ/hieassgg.o $(CXXFLAGS)
+
+OBJ/hieassgs.o: HIE/hieassgs.cpp
+	$(CPP) -c HIE/hieassgs.cpp -o OBJ/hieassgs.o $(CXXFLAGS)
+
+OBJ/hieaxscd.o: HIE/hieaxscd.cpp
+	$(CPP) -c HIE/hieaxscd.cpp -o OBJ/hieaxscd.o $(CXXFLAGS)
+
+OBJ/hieaxscr.o: HIE/hieaxscr.cpp
+	$(CPP) -c HIE/hieaxscr.cpp -o OBJ/hieaxscr.o $(CXXFLAGS)
+
+OBJ/hieaxsdf.o: HIE/hieaxsdf.cpp
+	$(CPP) -c HIE/hieaxsdf.cpp -o OBJ/hieaxsdf.o $(CXXFLAGS)
+
+OBJ/hieaxsli.o: HIE/hieaxsli.cpp
+	$(CPP) -c HIE/hieaxsli.cpp -o OBJ/hieaxsli.o $(CXXFLAGS)
+
+OBJ/hieaxsmn.o: HIE/hieaxsmn.cpp
+	$(CPP) -c HIE/hieaxsmn.cpp -o OBJ/hieaxsmn.o $(CXXFLAGS)
+
+OBJ/hieaxsmv.o: HIE/hieaxsmv.cpp
+	$(CPP) -c HIE/hieaxsmv.cpp -o OBJ/hieaxsmv.o $(CXXFLAGS)
+
+OBJ/hieaxsrm.o: HIE/hieaxsrm.cpp
+	$(CPP) -c HIE/hieaxsrm.cpp -o OBJ/hieaxsrm.o $(CXXFLAGS)
+
+OBJ/hieaxsrn.o: HIE/hieaxsrn.cpp
+	$(CPP) -c HIE/hieaxsrn.cpp -o OBJ/hieaxsrn.o $(CXXFLAGS)
+
+OBJ/hieaxsrt.o: HIE/hieaxsrt.cpp
+	$(CPP) -c HIE/hieaxsrt.cpp -o OBJ/hieaxsrt.o $(CXXFLAGS)
+
+OBJ/hieaxstr.o: HIE/hieaxstr.cpp
+	$(CPP) -c HIE/hieaxstr.cpp -o OBJ/hieaxstr.o $(CXXFLAGS)
+
+OBJ/hiedesag.o: HIE/hiedesag.cpp
+	$(CPP) -c HIE/hiedesag.cpp -o OBJ/hiedesag.o $(CXXFLAGS)
+
+OBJ/hiedesas.o: HIE/hiedesas.cpp
+	$(CPP) -c HIE/hiedesas.cpp -o OBJ/hiedesas.o $(CXXFLAGS)
+
+OBJ/hiedesgg.o: HIE/hiedesgg.cpp
+	$(CPP) -c HIE/hiedesgg.cpp -o OBJ/hiedesgg.o $(CXXFLAGS)
+
+OBJ/hiedesgs.o: HIE/hiedesgs.cpp
+	$(CPP) -c HIE/hiedesgs.cpp -o OBJ/hiedesgs.o $(CXXFLAGS)
+
+OBJ/hiegrpcr.o: HIE/hiegrpcr.cpp
+	$(CPP) -c HIE/hiegrpcr.cpp -o OBJ/hiegrpcr.o $(CXXFLAGS)
+
+OBJ/hiegrpcs.o: HIE/hiegrpcs.cpp
+	$(CPP) -c HIE/hiegrpcs.cpp -o OBJ/hiegrpcs.o $(CXXFLAGS)
+
+OBJ/hiegrpcy.o: HIE/hiegrpcy.cpp
+	$(CPP) -c HIE/hiegrpcy.cpp -o OBJ/hiegrpcy.o $(CXXFLAGS)
+
+OBJ/hiegrpdf.o: HIE/hiegrpdf.cpp
+	$(CPP) -c HIE/hiegrpdf.cpp -o OBJ/hiegrpdf.o $(CXXFLAGS)
+
+OBJ/hiegrpli.o: HIE/hiegrpli.cpp
+	$(CPP) -c HIE/hiegrpli.cpp -o OBJ/hiegrpli.o $(CXXFLAGS)
+
+OBJ/hiegrpmn.o: HIE/hiegrpmn.cpp
+	$(CPP) -c HIE/hiegrpmn.cpp -o OBJ/hiegrpmn.o $(CXXFLAGS)
+
+OBJ/hiegrpmv.o: HIE/hiegrpmv.cpp
+	$(CPP) -c HIE/hiegrpmv.cpp -o OBJ/hiegrpmv.o $(CXXFLAGS)
+
+OBJ/hiegrprg.o: HIE/hiegrprg.cpp
+	$(CPP) -c HIE/hiegrprg.cpp -o OBJ/hiegrprg.o $(CXXFLAGS)
+
+OBJ/hiegrprm.o: HIE/hiegrprm.cpp
+	$(CPP) -c HIE/hiegrprm.cpp -o OBJ/hiegrprm.o $(CXXFLAGS)
+
+OBJ/hiegrprn.o: HIE/hiegrprn.cpp
+	$(CPP) -c HIE/hiegrprn.cpp -o OBJ/hiegrprn.o $(CXXFLAGS)
+
+OBJ/hiegrprt.o: HIE/hiegrprt.cpp
+	$(CPP) -c HIE/hiegrprt.cpp -o OBJ/hiegrprt.o $(CXXFLAGS)
+
+OBJ/hiegrpsc.o: HIE/hiegrpsc.cpp
+	$(CPP) -c HIE/hiegrpsc.cpp -o OBJ/hiegrpsc.o $(CXXFLAGS)
+
+OBJ/hiegrptf.o: HIE/hiegrptf.cpp
+	$(CPP) -c HIE/hiegrptf.cpp -o OBJ/hiegrptf.o $(CXXFLAGS)
+
+OBJ/lowaddel.o: LOW/lowaddel.cpp
+	$(CPP) -c LOW/lowaddel.cpp -o OBJ/lowaddel.o $(CXXFLAGS)
+
+OBJ/lowaddhe.o: LOW/lowaddhe.cpp
+	$(CPP) -c LOW/lowaddhe.cpp -o OBJ/lowaddhe.o $(CXXFLAGS)
+
+OBJ/lowboxop.o: LOW/lowboxop.cpp
+	$(CPP) -c LOW/lowboxop.cpp -o OBJ/lowboxop.o $(CXXFLAGS)
+
+OBJ/lowcheck.o: LOW/lowcheck.cpp
+	$(CPP) -c LOW/lowcheck.cpp -o OBJ/lowcheck.o $(CXXFLAGS)
+
+OBJ/lowfaceq.o: LOW/lowfaceq.cpp
+	$(CPP) -c LOW/lowfaceq.cpp -o OBJ/lowfaceq.o $(CXXFLAGS)
+
+OBJ/lowfinde.o: LOW/lowfinde.cpp
+	$(CPP) -c LOW/lowfinde.cpp -o OBJ/lowfinde.o $(CXXFLAGS)
+
+OBJ/lowgeome.o: LOW/lowgeome.cpp
+	$(CPP) -c LOW/lowgeome.cpp -o OBJ/lowgeome.o $(CXXFLAGS)
+
+OBJ/lowinfos.o: LOW/lowinfos.cpp
+	$(CPP) -c LOW/lowinfos.cpp -o OBJ/lowinfos.o $(CXXFLAGS)
+
+OBJ/lowlists.o: LOW/lowlists.cpp
+	$(CPP) -c LOW/lowlists.cpp -o OBJ/lowlists.o $(CXXFLAGS)
+
+OBJ/lownewel.o: LOW/lownewel.cpp
+	$(CPP) -c LOW/lownewel.cpp -o OBJ/lownewel.o $(CXXFLAGS)
+
+OBJ/lowtrafn.o: LOW/lowtrafn.cpp
+	$(CPP) -c LOW/lowtrafn.cpp -o OBJ/lowtrafn.o $(CXXFLAGS)
+
+OBJ/lowtrans.o: LOW/lowtrans.cpp
+	$(CPP) -c LOW/lowtrans.cpp -o OBJ/lowtrans.o $(CXXFLAGS)
+
+OBJ/lowtrrot.o: LOW/lowtrrot.cpp
+	$(CPP) -c LOW/lowtrrot.cpp -o OBJ/lowtrrot.o $(CXXFLAGS)
+
+OBJ/lowtrrtg.o: LOW/lowtrrtg.cpp
+	$(CPP) -c LOW/lowtrrtg.cpp -o OBJ/lowtrrtg.o $(CXXFLAGS)
+
+OBJ/lowtrsca.o: LOW/lowtrsca.cpp
+	$(CPP) -c LOW/lowtrsca.cpp -o OBJ/lowtrsca.o $(CXXFLAGS)
+
+OBJ/lowtrtra.o: LOW/lowtrtra.cpp
+	$(CPP) -c LOW/lowtrtra.cpp -o OBJ/lowtrtra.o $(CXXFLAGS)
+
+OBJ/manhelp_.o: MAN/manhelp_.cpp
+	$(CPP) -c MAN/manhelp_.cpp -o OBJ/manhelp_.o $(CXXFLAGS)
+
+OBJ/manlinin.o: MAN/manlinin.cpp
+	$(CPP) -c MAN/manlinin.cpp -o OBJ/manlinin.o $(CXXFLAGS)
+
+OBJ/manmainp.o: MAN/manmainp.cpp
+	$(CPP) -c MAN/manmainp.cpp -o OBJ/manmainp.o $(CXXFLAGS)
+
+OBJ/manstrmp.o: MAN/manstrmp.cpp
+	$(CPP) -c MAN/manstrmp.cpp -o OBJ/manstrmp.o $(CXXFLAGS)
+
+OBJ/mantrace.o: MAN/mantrace.cpp
+	$(CPP) -c MAN/mantrace.cpp -o OBJ/mantrace.o $(CXXFLAGS)
+
+OBJ/memsolid.o: MEM/memsolid.cpp
+	$(CPP) -c MEM/memsolid.cpp -o OBJ/memsolid.o $(CXXFLAGS)
+
+OBJ/memvirtu.o: MEM/memvirtu.cpp
+	$(CPP) -c MEM/memvirtu.cpp -o OBJ/memvirtu.o $(CXXFLAGS)
+
+OBJ/rndaux__.o: RN1/rndaux__.cpp
+	$(CPP) -c RN1/rndaux__.cpp -o OBJ/rndaux__.o $(CXXFLAGS)
+
+OBJ/rndfase1.o: RN1/rndfase1.cpp
+	$(CPP) -c RN1/rndfase1.cpp -o OBJ/rndfase1.o $(CXXFLAGS)
+
+OBJ/rndfase2.o: RN1/rndfase2.cpp
+	$(CPP) -c RN1/rndfase2.cpp -o OBJ/rndfase2.o $(CXXFLAGS)
+
+OBJ/rndfase3.o: RN1/rndfase3.cpp
+	$(CPP) -c RN1/rndfase3.cpp -o OBJ/rndfase3.o $(CXXFLAGS)
+
+OBJ/rndround.o: RN1/rndround.cpp
+	$(CPP) -c RN1/rndround.cpp -o OBJ/rndround.o $(CXXFLAGS)
+
+OBJ/rovcirc_.o: ROV/rovcirc_.cpp
+	$(CPP) -c ROV/rovcirc_.cpp -o OBJ/rovcirc_.o $(CXXFLAGS)
+
+OBJ/rovcone_.o: ROV/rovcone_.cpp
+	$(CPP) -c ROV/rovcone_.cpp -o OBJ/rovcone_.o $(CXXFLAGS)
+
+OBJ/rovcubo_.o: ROV/rovcubo_.cpp
+	$(CPP) -c ROV/rovcubo_.cpp -o OBJ/rovcubo_.o $(CXXFLAGS)
+
+OBJ/rovdist_.o: ROV/rovdist_.cpp
+	$(CPP) -c ROV/rovdist_.cpp -o OBJ/rovdist_.o $(CXXFLAGS)
+
+OBJ/rovdmprc.o: ROV/rovdmprc.cpp
+	$(CPP) -c ROV/rovdmprc.cpp -o OBJ/rovdmprc.o $(CXXFLAGS)
+
+OBJ/rovesfer.o: ROV/rovesfer.cpp
+	$(CPP) -c ROV/rovesfer.cpp -o OBJ/rovesfer.o $(CXXFLAGS)
+
+OBJ/rovorden.o: ROV/rovorden.cpp
+	$(CPP) -c ROV/rovorden.cpp -o OBJ/rovorden.o $(CXXFLAGS)
+
+OBJ/rovperi_.o: ROV/rovperi_.cpp
+	$(CPP) -c ROV/rovperi_.cpp -o OBJ/rovperi_.o $(CXXFLAGS)
+
+OBJ/rovperl_.o: ROV/rovperl_.cpp
+	$(CPP) -c ROV/rovperl_.cpp -o OBJ/rovperl_.o $(CXXFLAGS)
+
+OBJ/rovpert_.o: ROV/rovpert_.cpp
+	$(CPP) -c ROV/rovpert_.cpp -o OBJ/rovpert_.o $(CXXFLAGS)
+
+OBJ/rovplaca.o: ROV/rovplaca.cpp
+	$(CPP) -c ROV/rovplaca.cpp -o OBJ/rovplaca.o $(CXXFLAGS)
+
+OBJ/rovprism.o: ROV/rovprism.cpp
+	$(CPP) -c ROV/rovprism.cpp -o OBJ/rovprism.o $(CXXFLAGS)
+
+OBJ/rovpyram.o: ROV/rovpyram.cpp
+	$(CPP) -c ROV/rovpyram.cpp -o OBJ/rovpyram.o $(CXXFLAGS)
+
+OBJ/rovquad_.o: ROV/rovquad_.cpp
+	$(CPP) -c ROV/rovquad_.cpp -o OBJ/rovquad_.o $(CXXFLAGS)
+
+OBJ/rovretan.o: ROV/rovretan.cpp
+	$(CPP) -c ROV/rovretan.cpp -o OBJ/rovretan.o $(CXXFLAGS)
+
+OBJ/rovtrian.o: ROV/rovtrian.cpp
+	$(CPP) -c ROV/rovtrian.cpp -o OBJ/rovtrian.o $(CXXFLAGS)
+
+OBJ/rovtrnds.o: ROV/rovtrnds.cpp
+	$(CPP) -c ROV/rovtrnds.cpp -o OBJ/rovtrnds.o $(CXXFLAGS)
+
+OBJ/rovtrntr.o: ROV/rovtrntr.cpp
+	$(CPP) -c ROV/rovtrntr.cpp -o OBJ/rovtrntr.o $(CXXFLAGS)
+
+OBJ/setdiffe.o: SET/setdiffe.cpp
+	$(CPP) -c SET/setdiffe.cpp -o OBJ/setdiffe.o $(CXXFLAGS)
+
+OBJ/setinter.o: SET/setinter.cpp
+	$(CPP) -c SET/setinter.cpp -o OBJ/setinter.o $(CXXFLAGS)
+
+OBJ/setomain.o: SET/setomain.cpp
+	$(CPP) -c SET/setomain.cpp -o OBJ/setomain.o $(CXXFLAGS)
+
+OBJ/setopcls.o: SET/setopcls.cpp
+	$(CPP) -c SET/setopcls.cpp -o OBJ/setopcls.o $(CXXFLAGS)
+
+OBJ/setopcon.o: SET/setopcon.cpp
+	$(CPP) -c SET/setopcon.cpp -o OBJ/setopcon.o $(CXXFLAGS)
+
+OBJ/setopfin.o: SET/setopfin.cpp
+	$(CPP) -c SET/setopfin.cpp -o OBJ/setopfin.o $(CXXFLAGS)
+
+OBJ/setopgen.o: SET/setopgen.cpp
+	$(CPP) -c SET/setopgen.cpp -o OBJ/setopgen.o $(CXXFLAGS)
+
+OBJ/setopget.o: SET/setopget.cpp
+	$(CPP) -c SET/setopget.cpp -o OBJ/setopget.o $(CXXFLAGS)
+
+OBJ/setsinsn.o: SET/setsinsn.cpp
+	$(CPP) -c SET/setsinsn.cpp -o OBJ/setsinsn.o $(CXXFLAGS)
+
+OBJ/setsrece.o: SET/setsrece.cpp
+	$(CPP) -c SET/setsrece.cpp -o OBJ/setsrece.o $(CXXFLAGS)
+
+OBJ/setsrecs.o: SET/setsrecs.cpp
+	$(CPP) -c SET/setsrecs.cpp -o OBJ/setsrecs.o $(CXXFLAGS)
+
+OBJ/settrace.o: SET/settrace.cpp
+	$(CPP) -c SET/settrace.cpp -o OBJ/settrace.o $(CXXFLAGS)
+
+OBJ/setunion.o: SET/setunion.cpp
+	$(CPP) -c SET/setunion.cpp -o OBJ/setunion.o $(CXXFLAGS)
+
+OBJ/shpcylin.o: SHP/shpcylin.cpp
+	$(CPP) -c SHP/shpcylin.cpp -o OBJ/shpcylin.o $(CXXFLAGS)
+
+OBJ/shpgeoms.o: SHP/shpgeoms.cpp
+	$(CPP) -c SHP/shpgeoms.cpp -o OBJ/shpgeoms.o $(CXXFLAGS)
+
+OBJ/shpmpris.o: SHP/shpmpris.cpp
+	$(CPP) -c SHP/shpmpris.cpp -o OBJ/shpmpris.o $(CXXFLAGS)
+
+OBJ/shpmrevo.o: SHP/shpmrevo.cpp
+	$(CPP) -c SHP/shpmrevo.cpp -o OBJ/shpmrevo.o $(CXXFLAGS)
+
+OBJ/shppris0.o: SHP/shppris0.cpp
+	$(CPP) -c SHP/shppris0.cpp -o OBJ/shppris0.o $(CXXFLAGS)
+
+OBJ/shpprism.o: SHP/shpprism.cpp
+	$(CPP) -c SHP/shpprism.cpp -o OBJ/shpprism.o $(CXXFLAGS)
+
+OBJ/shppyram.o: SHP/shppyram.cpp
+	$(CPP) -c SHP/shppyram.cpp -o OBJ/shppyram.o $(CXXFLAGS)
+
+OBJ/shprevol.o: SHP/shprevol.cpp
+	$(CPP) -c SHP/shprevol.cpp -o OBJ/shprevol.o $(CXXFLAGS)
+
+OBJ/shpspher.o: SHP/shpspher.cpp
+	$(CPP) -c SHP/shpspher.cpp -o OBJ/shpspher.o $(CXXFLAGS)
+
+OBJ/shpsweep.o: SHP/shpsweep.cpp
+	$(CPP) -c SHP/shpsweep.cpp -o OBJ/shpsweep.o $(CXXFLAGS)
+
+OBJ/shptorus.o: SHP/shptorus.cpp
+	$(CPP) -c SHP/shptorus.cpp -o OBJ/shptorus.o $(CXXFLAGS)
+
+OBJ/shpxcube.o: SHP/shpxcube.cpp
+	$(CPP) -c SHP/shpxcube.cpp -o OBJ/shpxcube.o $(CXXFLAGS)
+
+OBJ/splmain_.o: SPL/splmain_.cpp
+	$(CPP) -c SPL/splmain_.cpp -o OBJ/splmain_.o $(CXXFLAGS)
+
+OBJ/splstep1.o: SPL/splstep1.cpp
+	$(CPP) -c SPL/splstep1.cpp -o OBJ/splstep1.o $(CXXFLAGS)
+
+OBJ/splstep2.o: SPL/splstep2.cpp
+	$(CPP) -c SPL/splstep2.cpp -o OBJ/splstep2.o $(CXXFLAGS)
+
+OBJ/splstep3.o: SPL/splstep3.cpp
+	$(CPP) -c SPL/splstep3.cpp -o OBJ/splstep3.o $(CXXFLAGS)
+
+OBJ/splstep4.o: SPL/splstep4.cpp
+	$(CPP) -c SPL/splstep4.cpp -o OBJ/splstep4.o $(CXXFLAGS)
+
+OBJ/splvoron.o: SPL/splvoron.cpp
+	$(CPP) -c SPL/splvoron.cpp -o OBJ/splvoron.o $(CXXFLAGS)
+
+OBJ/topclean.o: TOP/topclean.cpp
+	$(CPP) -c TOP/topclean.cpp -o OBJ/topclean.o $(CXXFLAGS)
+
+OBJ/topdetac.o: TOP/topdetac.cpp
+	$(CPP) -c TOP/topdetac.cpp -o OBJ/topdetac.o $(CXXFLAGS)
+
+OBJ/toplglue.o: TOP/toplglue.cpp
+	$(CPP) -c TOP/toplglue.cpp -o OBJ/toplglue.o $(CXXFLAGS)
+
+OBJ/topmerge.o: TOP/topmerge.cpp
+	$(CPP) -c TOP/topmerge.cpp -o OBJ/topmerge.o $(CXXFLAGS)
+
+OBJ/topmodif.o: TOP/topmodif.cpp
+	$(CPP) -c TOP/topmodif.cpp -o OBJ/topmodif.o $(CXXFLAGS)
+
+OBJ/topnewlc.o: TOP/topnewlc.cpp
+	$(CPP) -c TOP/topnewlc.cpp -o OBJ/topnewlc.o $(CXXFLAGS)
+
+OBJ/topremhr.o: TOP/topremhr.cpp
+	$(CPP) -c TOP/topremhr.cpp -o OBJ/topremhr.o $(CXXFLAGS)
+
+OBJ/topremsf.o: TOP/topremsf.cpp
+	$(CPP) -c TOP/topremsf.cpp -o OBJ/topremsf.o $(CXXFLAGS)
+
+OBJ/toprever.o: TOP/toprever.cpp
+	$(CPP) -c TOP/toprever.cpp -o OBJ/toprever.o $(CXXFLAGS)
+
+OBJ/topringm.o: TOP/topringm.cpp
+	$(CPP) -c TOP/topringm.cpp -o OBJ/topringm.o $(CXXFLAGS)
+
+OBJ/vectorop.o: VEC/vectorop.cpp
+	$(CPP) -c VEC/vectorop.cpp -o OBJ/vectorop.o $(CXXFLAGS)
+
+OBJ/PROP.o: PROP.CPP
+	$(CPP) -c PROP.CPP -o OBJ/PROP.o $(CXXFLAGS)
